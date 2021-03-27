@@ -3,10 +3,8 @@
     <div class="edit-item">
       <span class="label">修改头像</span>
       <upload-img
-        action = '/api/upload?type=user'
-        :imageUrl="avatar"
         imgMaxWidth="210"
-        @res-url="(data) => {avatar=data.resImgUrl}"
+
       ></upload-img>
     </div>
     <div class="edit-item">
@@ -37,23 +35,13 @@ import {userEdit} from '@/service/api'
 export default {
   components: {UploadImg},
   data(){
-    const userInfo = this.$store.state.userInfo;
+
     return {
-      avatar: userInfo.avatar,
-      name: userInfo.name,
-      sign:userInfo.sign
+
     }
   },
   methods:{
-    async save(){
-      // 做校验
-      let data = await userEdit({avatar: this.avatar, name: this.name, sign: this.sign});
-      if(data.code === 0){
-        this.$router.push({
-          name: 'space'
-        })
-      }
-    }
+
   }
 }
 </script>

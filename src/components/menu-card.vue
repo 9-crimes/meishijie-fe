@@ -1,22 +1,88 @@
 <template>
   <el-row class="menu-card" type="flex" justify="start">
-    <el-col 
-      v-for="item in info" 
-      :key="item._id" 
+    <el-col
       style="flex:none;" 
       :style="{'margin-left':marginLeft+'px'}"
     >
       <el-card :body-style="{ padding: '0px' }">
-        <router-link :to="{name: 'detail', query:{menuId: item._id}}">
-          <img :src="item.product_pic_url" class="image" style="width: 232px;height: 232px;">
+        <router-link to="">
+          <img src="" class="image" style="width: 232px;height: 232px;">
           <div style="padding: 14px;" class="menu-card-detail">
-            <strong>{{item.title}}</strong>
-            <span>{{item.comments_len}} 评论</span>
-            <router-link :to="{name:'space', query: {userId: item.userId}}" tag="em">
-            {{item.name}}
+            <strong>菜品名称</strong>
+            <span>0 评论</span>
+            <router-link to="" tag="em">
+            作者
             </router-link>
           </div>
         </router-link> 
+      </el-card>
+    </el-col>
+    <el-col
+            style="flex:none;"
+            :style="{'margin-left':marginLeft+'px'}"
+    >
+      <el-card :body-style="{ padding: '0px' }">
+        <router-link to="">
+          <img src="" class="image" style="width: 232px;height: 232px;">
+          <div style="padding: 14px;" class="menu-card-detail">
+            <strong>菜品名称</strong>
+            <span>0 评论</span>
+            <router-link to="" tag="em">
+              作者
+            </router-link>
+          </div>
+        </router-link>
+      </el-card>
+    </el-col>
+    <el-col
+            style="flex:none;"
+            :style="{'margin-left':marginLeft+'px'}"
+    >
+      <el-card :body-style="{ padding: '0px' }">
+        <router-link to="">
+          <img src="" class="image" style="width: 232px;height: 232px;">
+          <div style="padding: 14px;" class="menu-card-detail">
+            <strong>菜品名称</strong>
+            <span>0 评论</span>
+            <router-link to="" tag="em">
+              作者
+            </router-link>
+          </div>
+        </router-link>
+      </el-card>
+    </el-col>
+    <el-col
+            style="flex:none;"
+            :style="{'margin-left':marginLeft+'px'}"
+    >
+      <el-card :body-style="{ padding: '0px' }">
+        <router-link to="">
+          <img src="" class="image" style="width: 232px;height: 232px;">
+          <div style="padding: 14px;" class="menu-card-detail">
+            <strong>菜品名称</strong>
+            <span>0 评论</span>
+            <router-link to="" tag="em">
+              作者
+            </router-link>
+          </div>
+        </router-link>
+      </el-card>
+    </el-col>
+    <el-col
+            style="flex:none;"
+            :style="{'margin-left':marginLeft+'px'}"
+    >
+      <el-card :body-style="{ padding: '0px' }">
+        <router-link to="">
+          <img src="" class="image" style="width: 232px;height: 232px;">
+          <div style="padding: 14px;" class="menu-card-detail">
+            <strong>菜品名称</strong>
+            <span>0 评论</span>
+            <router-link to="" tag="em">
+              作者
+            </router-link>
+          </div>
+        </router-link>
       </el-card>
     </el-col>
   </el-row>
